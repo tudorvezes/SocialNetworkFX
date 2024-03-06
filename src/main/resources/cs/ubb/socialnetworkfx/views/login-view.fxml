@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="328.0" styleClass="anchor-pane" stylesheets="/cs/ubb/socialnetworkfx/style/general-style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.ubb.socialnetworkfx.controller.LoginController">
+   <children>
+      <ImageView fitHeight="58.0" fitWidth="251.0" layoutX="117.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/cs/ubb/socialnetworkfx/icons/logo-green.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="171.0" styleClass="subtext-label" text="Username" />
+      <TextField fx:id="usernameField" layoutX="55.0" layoutY="188.0" prefHeight="30.0" prefWidth="218.0" styleClass="text-field" />
+      <Label layoutX="56.0" layoutY="229.0" styleClass="subtext-label" text="Password" />
+      <PasswordField fx:id="passwordField" layoutX="56.0" layoutY="246.0" prefHeight="30.0" prefWidth="182.0" styleClass="text-field" />
+      <Button fx:id="loginButton" layoutX="238.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="29.0" prefWidth="30.0" styleClass="login-button">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <Image url="@/cs/ubb/socialnetworkfx/icons/navigate_next_white.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="100.0" layoutY="312.0" styleClass="text-label-regular" text="Don't have an account? " textAlignment="CENTER" />
+      <Label layoutX="144.0" layoutY="329.0" onMouseClicked="#handleSignUp" styleClass="text-label-bold" text="Sign up" textAlignment="CENTER" />
+
+      <Button fx:id="adminButton" layoutX="164.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleAdmin" prefHeight="48.0" prefWidth="164.0" styleClass="admin-button" text="Admin Login" />
+      <Button fx:id="closeButton" layoutY="443.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="48.0" prefWidth="164.0" styleClass="admin-button" text="Close" />
+   </children>
+</AnchorPane>

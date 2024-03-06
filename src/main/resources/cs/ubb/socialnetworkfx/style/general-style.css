@@ -1,0 +1,64 @@
+.root {
+    -fx-font-family: "Circular Spotify Text Book";
+    -fx-font-size: 14px;
+}
+
+.anchor-pane {
+    -fx-background-color: #fdfdfd;
+}
+
+.text-field {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 0;
+}
+
+.password-field {
+    -fx-background-color: #eeeeee;
+    -fx-font-size: 10px;
+    -fx-background-radius: 0;
+}
+
+.text-label-regular {
+    -fx-text-fill: #a7a7a7;
+}
+
+.text-label-bold {
+    -fx-text-fill: #000000;
+    -fx-font-family: "Circular Spotify Text Medium";
+    -fx-underline: true;
+}
+
+.text-label-bold:hover {
+    -fx-text-fill: #212121;
+}
+
+.subtext-label {
+    -fx-text-fill: #1a1a1a;
+    -fx-font-size: 12px;
+}
+
+.subtext-grey-label {
+    -fx-text-fill: #363636;
+    -fx-font-size: 12px;
+}
+
+.login-button {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #a9a9a9;
+    -fx-background-radius: 0;
+}
+
+.login-button:hover {
+    -fx-background-color: #313131;
+}
+
+.admin-button {
+    -fx-background-color: #e5e5e5;
+    -fx-text-fill: #181818;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.admin-button:hover {
+    -fx-background-color: #efefef;
+}

@@ -1,0 +1,226 @@
+.root {
+    -fx-font-family: "Circular Spotify Text Book";
+    -fx-font-size: 14px;
+}
+
+.main-anchor-pane {
+    -fx-background-color: #fdfdfd;
+}
+
+.sub-anchor-pane {
+    -fx-background-color: #f6f6f6;
+}
+
+.scroll-pane {
+    -fx-background-color: #f6f6f6;
+}
+
+.scroll-pane .scroll-bar:vertical,
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0;
+    -fx-min-width: 4;
+    -fx-max-width: 4;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0;
+    -fx-min-height: 4;
+    -fx-max-height: 4;
+}
+
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button,
+.scroll-pane .scroll-bar:horizontal .increment-button,
+.scroll-pane .scroll-bar:horizontal .decrement-button {
+    -fx-opacity: 0;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #808080;
+    -fx-background-radius: 0;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #606060;
+}
+
+
+.text-field {
+    -fx-background-color: #D3F7E0;
+    -fx-background-radius: 0;
+    -fx-font-size: 12px;
+    -fx-text-fill: #181818;
+    -fx-prompt-text-fill: #181818;
+}
+
+.text-label-regular {
+    -fx-text-fill: #a7a7a7;
+}
+
+.text-label-bold {
+    -fx-text-fill: #000000;
+    -fx-font-family: "Circular Spotify Text Medium";
+    -fx-underline: true;
+}
+
+.text-label-bold:hover {
+    -fx-text-fill: #212121;
+}
+
+.subtext-label {
+    -fx-text-fill: #1a1a1a;
+    -fx-font-size: 12px;
+}
+
+.text-label-name {
+    -fx-text-fill: #181818;
+    -fx-font-size: 52px;
+    -fx-font-family: "Circular Spotify Text Bold";
+}
+
+.text-label-username {
+    -fx-text-fill: #181818;
+    -fx-font-size: 14px;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.message-button {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #a9a9a9;
+    -fx-background-radius: 0;
+}
+
+.message-button:hover {
+    -fx-background-color: #313131;
+}
+
+.button-basic {
+    -fx-background-color: #e5e5e5;
+    -fx-text-fill: #181818;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.button-basic:hover {
+    -fx-background-color: #efefef;
+}
+
+.search-list-view {
+    -fx-background-color: #e4ffef;
+    -fx-font-size: 12px;
+    -fx-text-fill: #181818;
+}
+
+.search-list-view .list-cell:filled {
+    -fx-background-color: #e4ffef;
+}
+
+.search-list-view .list-cell:empty {
+    -fx-background-color: #e4ffef;
+}
+
+.search-list-view .list-cell:filled:selected {
+    -fx-text-fill: #181818;
+}
+
+/* notification list view */
+/* notification list item selected background */
+.notification-list-view .list-cell:filled {
+    -fx-background-color: #F6F6F6;
+}
+
+.notification-list-view .list-cell:filled:focused {
+    -fx-background-color: #F6F6F6;
+}
+
+.notification-list-view .list-cell:filled:selected {
+    -fx-background-color: #dadada;
+}
+
+.notification-list-view .list-cell:empty {
+    -fx-background-color: #F6F6F6;
+}
+
+
+/* notification list item text */
+.notification-list-view .list-cell:focused .notification-label,
+.notification-list-view .list-cell:focused .time-label {
+    -fx-text-fill: #181818;
+}
+
+/* notification list scroll bar */
+.notification-list-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-padding: 0;
+}
+
+.notification-list-view .scroll-bar:horizontal:hover {
+    -fx-opacity: 0;
+}
+
+.notification-list-view {
+    -fx-background-color: #F6F6F6;
+    -fx-font-size: 14px;
+    -fx-text-fill: #181818;
+    -fx-rotate: 0;
+    -fx-translate-x: 0;
+}
+
+.notification-label {
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+    -fx-max-width: 200;
+    -fx-text-alignment: left;
+    -fx-padding: 0 0 3 0;
+}
+
+.time-label {
+    -fx-font-size: 10px;
+}
+
+.send-request-button {
+    -fx-background-color: #ffebb1;
+    -fx-text-fill: #dca300;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.accept-request-button {
+    -fx-background-color: #bafbd1;
+    -fx-text-fill: #10c04b;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.decline-request-button {
+    -fx-background-color: #ffb1aa;
+    -fx-text-fill: #c92b1d;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.fiends-button {
+    -fx-background-color: #bafbd1;
+    -fx-text-fill: #10c04b;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.delete-friend-button {
+    -fx-background-color: #ffb1aa;
+    -fx-text-fill: #c92b1d;
+    -fx-background-radius: 0;
+    -fx-font-family: "Circular Spotify Text Medium";
+}
+
+.sent-request-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #dca300;
+}

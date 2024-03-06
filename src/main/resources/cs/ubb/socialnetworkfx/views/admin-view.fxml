@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.ubb.socialnetworkfx.controller.AdminController">
+    <SplitPane dividerPositions="0.6169786096256683" prefHeight="400.0" prefWidth="600.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <TableView fx:id="userTable" layoutX="13.0" layoutY="14.0" onMouseClicked="#handleSelection" prefHeight="330.0" prefWidth="342.0">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="usernameColumn" prefWidth="100.0" text="Username" />
+                        <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Name" />
+                    </columns>
+                </TableView>
+            <Button fx:id="previousButton" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#handlePrevious" text="Previous" />
+            <Button fx:id="nextButton" layoutX="83.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleNext" text="Next" />
+            <Label fx:id="currentPageNo" layoutX="134.0" layoutY="361.0" prefHeight="18.0" prefWidth="24.0" text="0/0" textAlignment="RIGHT" />
+            <ChoiceBox fx:id="elementsOnPageChoiceBox" layoutX="311.0" layoutY="357.0" onAction="#handleElementsOnPage" prefHeight="26.0" prefWidth="42.0" />
+            <Label layoutX="224.0" layoutY="361.0" text="Users on page:" />
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="300.0">
+            <Label layoutX="14.0" layoutY="14.0" text="ID" />
+            <TextField fx:id="idField" layoutX="14.0" layoutY="34.0" prefHeight="26.0" prefWidth="161.0" />
+            <Label layoutX="14.0" layoutY="74.0" text="Username" />
+            <TextField fx:id="usernameField" layoutX="14.0" layoutY="94.0" prefHeight="26.0" prefWidth="200.0" />
+            <Label layoutX="14.0" layoutY="134.0" text="Name" />
+            <TextField fx:id="nameField" layoutX="14.0" layoutY="154.0" prefWidth="200.0" />
+            <Button fx:id="addButton" layoutX="14.0" layoutY="237.0" onAction="#handleAdd" prefHeight="26.0" prefWidth="200.0" text="Add" />
+            <Button fx:id="deleteButton" layoutX="14.0" layoutY="277.0" onAction="#handleDelete" prefHeight="26.0" prefWidth="200.0" text="Delete" />
+            <Button fx:id="updateButton" layoutX="14.0" layoutY="317.0" onAction="#handleUpdate" prefHeight="26.0" prefWidth="200.0" text="Update" />
+            <Button fx:id="clearButton" layoutX="14.0" layoutY="357.0" onAction="#handleClear" prefHeight="26.0" prefWidth="200.0" text="Clear" />
+            <Button fx:id="nextIdButton" accessibleText="Next avalaible ID" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="182.0" layoutY="34.0" mnemonicParsing="false" onAction="#handleNextId" prefHeight="26.0" prefWidth="32.0">
+                <Tooltip text="Next avalaible ID" />
+                <graphic>
+                    <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                        <Image url="@/cs/ubb/socialnetworkfx/icons/random.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>

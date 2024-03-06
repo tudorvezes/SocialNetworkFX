@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.ubb.socialnetworkfx.controller.MessengerController">
+   <children>
+      <SplitPane dividerPositions="0.37967914438502665" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="chatRoomsList" layoutX="14.0" layoutY="48.0" onMouseClicked="#handleOpenChat" prefHeight="336.0" prefWidth="200.0" />
+                  <Button fx:id="createChatButton" layoutX="146.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#handleNewChat" text="New Chat" />
+                  <TextField layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="125.0" promptText="Search..." />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextField fx:id="contentField" layoutX="13.0" layoutY="359.0" prefHeight="26.0" prefWidth="288.0" />
+                  <Button fx:id="sendButton" layoutX="311.0" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#handleSendMessage" text="Send" />
+                  <ListView fx:id="messagesList" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="339.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

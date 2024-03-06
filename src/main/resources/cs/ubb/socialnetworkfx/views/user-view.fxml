@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="570.0" prefWidth="699.0" styleClass="main-anchor-pane" stylesheets="/cs/ubb/socialnetworkfx/style/user-style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.ubb.socialnetworkfx.controller.UserController">
+   <children>
+    <AnchorPane fx:id="profileAnchorPane" layoutX="14.0" layoutY="58.0" minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="450.0" styleClass="sub-anchor-pane">
+            <children>
+                     <ImageView fitHeight="178.0" fitWidth="226.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@/cs/ubb/socialnetworkfx/icons/accent_circle.png" />
+                         </image>
+                     </ImageView>
+                    <Label fx:id="usernameLabel" layoutX="39.0" layoutY="79.0" styleClass="text-label-username" text="\@username" />
+                    <Label fx:id="nameLabel" layoutX="37.0" layoutY="19.0" styleClass="text-label-name" text="Name">
+                       <font>
+                          <Font name="System Bold" size="29.0" />
+                       </font>
+                    </Label>
+                    <Button fx:id="sendFriendRequestButton" layoutX="35.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleSendFriendRequest" prefHeight="30.0" prefWidth="170.0" styleClass="send-request-button" text="Send friend request" />
+                    <Button fx:id="acceptFriendshipButton" layoutX="35.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleAcceptFriendship" prefHeight="30.0" prefWidth="143.0" styleClass="accept-request-button" text="Accept friendship" />
+                    <Button fx:id="declineFriendshipButton" layoutX="178.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleDeclineFriendship" prefHeight="30.0" prefWidth="30.0" styleClass="decline-request-button">
+                        <graphic>
+                            <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                                <Image url="@/cs/ubb/socialnetworkfx/icons/remove_white.png" />
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="isFriendButton" layoutX="35.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="30.0" prefWidth="105.0" styleClass="fiends-button" text="Friends" />
+                    <Button fx:id="deleteFriendButton" layoutX="141.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="30.0" prefWidth="30.0" styleClass="delete-friend-button">
+                        <graphic>
+                            <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                                <Image url="@/cs/ubb/socialnetworkfx/icons/remove_white.png" />
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Label fx:id="requestSentLabel" layoutX="217.0" layoutY="121.0" styleClass="sent-request-label" text="Friend request sent!" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="59.0" prefWidth="699.0">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="81.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@/cs/ubb/socialnetworkfx/icons/logo-green.png" />
+                 </image>
+             </ImageView>
+             <Button id="homeButton" layoutX="528.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#handleHomepage" prefHeight="26.0" prefWidth="26.0" styleClass="message-button">
+                 <graphic>
+                     <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                         <Image url="@/cs/ubb/socialnetworkfx/icons/home_white.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button fx:id="postButton" layoutX="569.0" layoutY="16.0" mnemonicParsing="false" onAction="#handlePost" prefHeight="26.0" prefWidth="26.0" styleClass="message-button">
+                 <graphic>
+                     <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                         <Image url="@/cs/ubb/socialnetworkfx/icons/add_white.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button id="profileButton" layoutX="610.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#handleLoadCurrentUser" prefHeight="26.0" prefWidth="26.0" styleClass="message-button">
+                 <graphic>
+                     <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                         <Image url="@/cs/ubb/socialnetworkfx/icons/profile_white.png" />
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <Button id="messengerButton" layoutX="651.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#handleMessenger" prefHeight="26.0" prefWidth="26.0" styleClass="message-button">
+                 <graphic>
+                     <ImageView fitHeight="13.0" fitWidth="14.0" preserveRatio="true">
+                         <Image url="@/cs/ubb/socialnetworkfx/icons/forum_white.png" />
+                     </ImageView>
+                 </graphic>
+            </Button>
+            <Label fx:id="currentUserLabel" layoutX="309.0" layoutY="20.0" prefHeight="18.0" prefWidth="203.0" text="username" textAlignment="RIGHT" />
+            <TextField fx:id="searchField" layoutX="68.0" layoutY="17.0" onKeyReleased="#handleSearch" prefHeight="26.0" prefWidth="203.0" promptText="Search..." />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="481.0" layoutY="58.0" prefHeight="386.0" prefWidth="203.0" styleClass="sub-anchor-pane">
+         <children>
+             <ListView fx:id="notificationsList" onMouseClicked="#handleSelectNotification" prefHeight="497.0" prefWidth="203.0" styleClass="notification-list-view" />
+         </children>
+      </AnchorPane>
+    <AnchorPane fx:id="postAnchorPane" layoutX="14.0" layoutY="250.0" minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="450.0" styleClass="sub-anchor-pane">
+         <children>
+            <ScrollPane fx:id="postScrollPane" prefHeight="306.0" prefWidth="450.0" styleClass="sub-anchor-pane" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homeAnchorPane" layoutX="14.0" layoutY="58.0" minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="450.0" styleClass="sub-anchor-pane" visible="false">
+         <children>
+            <ScrollPane fx:id="homeScrollPane" prefHeight="498.0" prefWidth="442.0" styleClass="sub-anchor-pane" />
+         </children>
+      </AnchorPane>
+       <ListView fx:id="listView" layoutX="68.0" layoutY="43.0" onMouseClicked="#handleSelectUserSearch" prefHeight="178.0" prefWidth="203.0" styleClass="search-list-view" visible="false" />
+   </children>
+</AnchorPane>

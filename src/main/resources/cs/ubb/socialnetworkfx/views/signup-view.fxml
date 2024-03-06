@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="405.0" prefWidth="418.0" styleClass="anchor-pane" stylesheets="/cs/ubb/socialnetworkfx/style/general-style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs.ubb.socialnetworkfx.controller.SignUpController">
+   <children>
+      <ImageView fitHeight="206.0" fitWidth="391.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+             <Image url="@/cs/ubb/socialnetworkfx/icons/welcome_text.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="222.0" styleClass="subtext-label" text="Name" />
+      <TextField fx:id="nameField" layoutX="41.0" layoutY="239.0" prefHeight="30.0" prefWidth="153.0" />
+      <Label layoutX="220.0" layoutY="222.0" styleClass="subtext-label" text="Username" />
+      <TextField fx:id="usernameField" layoutX="220.0" layoutY="239.0" onKeyReleased="#handleTyping" prefHeight="30.0" prefWidth="154.0" />
+      <Label layoutX="41.0" layoutY="280.0" styleClass="subtext-label" text="Password" />
+      <PasswordField fx:id="passwordField" layoutX="41.0" layoutY="297.0" prefHeight="30.0" onKeyReleased="#handlePasswordTyping" prefWidth="153.0" />
+      <Label layoutX="220.0" layoutY="280.0" styleClass="subtext-label" text="Confirm password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="220.0" layoutY="297.0" prefHeight="30.0" onKeyReleased="#handleConfirmPasswordTyping" prefWidth="153.0" />
+      <Button fx:id="singUpButton" layoutX="338.0" layoutY="351.0" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="30.0" prefWidth="30.0" styleClass="login-button">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+               <Image url="@/cs/ubb/socialnetworkfx/icons/navigate_next_white.png" />
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
