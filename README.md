@@ -37,3 +37,4 @@ gradle run
 - Create a post and seea feed of your friends' posts
 - Send and accept friendship requests
 - Send messages to a friend or to a group
+- Admin console for managing users
