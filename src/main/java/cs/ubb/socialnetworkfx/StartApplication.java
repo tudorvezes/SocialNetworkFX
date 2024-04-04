@@ -47,7 +47,7 @@ public class StartApplication extends Application {
         String url = DatabaseConnectionConfig.URL;
         String username = DatabaseConnectionConfig.USERNAME;
         String password = DatabaseConnectionConfig.PASSWORD;
-        
+
         userValidator = new UserValidator();
         friendshipValidator = new FriendshipValidator();
         messageValidator = new MessageValidator();

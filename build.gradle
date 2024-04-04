@@ -14,7 +14,7 @@ repositories {
 }
 
 ext {
-  junitVersion = '5.9.2'
+  junitVersion = '5.10.0'
 }
 
 sourceCompatibility = '17'
@@ -30,7 +30,7 @@ application {
 }
 
 javafx {
-  version = '21-ea+5'
+  version = '17.0.6'
   modules = ['javafx.controls', 'javafx.fxml']
 }
 
@@ -42,7 +42,8 @@ dependencies {
 }
 
 test {
-useJUnitPlatform()}
+  useJUnitPlatform()
+}
 
 jlink {
   imageZip = project.file("${buildDir}/distributions/app-${javafx.platform.classifier}.zip")

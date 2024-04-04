@@ -87,6 +87,8 @@ public class AdminController implements Observer<UserChangeEvent> {
 
     }
 
+
+
     @FXML
     public void initialize() {
         idColumn.setCellValueFactory(new PropertyValueFactory<User, String>("id"));
