@@ -17,17 +17,20 @@ To run this project, you need to:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/tudorvezes/SocialNetworkFX.git```
+git clone https://github.com/tudorvezes/SocialNetworkFX.git
+```
 
 2. Navigate to the project directory
 ```bash
-cd SocialNetworkFX```
+cd SocialNetworkFX
+```
 
 3. Run the project using Gradle
 ```bash
-gradle run```
+gradle run
+```
 
-##Features
+## Features
 - User login
 - User sign up
 - Add, delete, and update user information
