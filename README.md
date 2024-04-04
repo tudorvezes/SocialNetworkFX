@@ -7,6 +7,7 @@ SocialNetworkFX is a JavaFX application that simulates a social network. It allo
 - Java
 - JavaFX
 - Gradle
+- PostgreSQL
 
 ## Requirements
 - Java 17
